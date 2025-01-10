@@ -1,102 +1,104 @@
-# CarValueAI
+# PriceMyCar 🚗
 
-## Overview
-**CarValueAI** is a machine learning-powered web application for predicting car prices based on various input features such as brand, year of manufacture, fuel type, and mileage. This project utilizes a pre-trained machine learning model and provides an intuitive user interface built using Streamlit.
-
----
-
-## Features
-- **Accurate Predictions**: Leverages a pre-trained machine learning model for precise car price estimation.
-- **Interactive UI**: Users can input details like car brand, year, mileage, engine capacity, and more.
-- **Custom Styling**: A modern and user-friendly design with CSS enhancements.
-- **Data-Driven Insights**: Processes categorical and numerical data seamlessly for accurate predictions.
+## Overview 📋
+**PriceMyCar** is a simple machine learning-based web application built using Streamlit that predicts the price of a car based on its attributes. This project is developed for educational purposes to demonstrate the workflow of data preprocessing, model building, and deployment using Python.
 
 ---
 
-## Installation
+## Features ✨
+- Predict car prices based on input features like brand, year, mileage, engine capacity, etc.
+- User-friendly interface designed using **Streamlit**.
+- Real-time car price prediction.
 
-### Prerequisites
-- Python 3.8 or higher
-- Streamlit
-- pandas
-- pickle
+---
 
-### Setup Instructions
+## Project Workflow 🛠️
+
+### Step 1: Setting Up the Environment 🌐
+1. **Python Environment:**
+   - Installed Python 3.8.
+   - Created a virtual environment using `venv`.
+   - Activated the environment and installed required packages.
+2. **Libraries Used:**
+   - `pandas`
+   - `numpy`
+   - `streamlit`
+   - `scikit-learn`
+
+### Step 2: Data Preparation 📊
+1. **Dataset Source:**
+   - The dataset was obtained from a YouTube tutorial and downloaded from Google Drive.
+   - Dataset filename: `Cardetails.csv`.
+2. **Data Preprocessing:**
+   - Checked for null values and handled them appropriately.
+   - Removed duplicates.
+   - Dropped unnecessary columns.
+   - Replaced categorical values and converted them into numerical format.
+
+### Step 3: Model Development 🤖
+1. **Model Used:**
+   - Linear Regression.
+2. **Workflow:**
+   - Trained the model on the preprocessed dataset.
+   - Evaluated its performance.
+   - Exported the model using `pickle` into a file named `model.pkl`.
+
+### Step 4: Application Development 🌟
+1. **Streamlit App:**
+   - Built a user-friendly interface to input car details and predict the price.
+   - Application file: `app.py`.
+2. **Features Implemented:**
+   - Dropdowns, sliders, and buttons for user inputs.
+   - Display predicted car price dynamically.
+
+---
+
+## How It Looks 🖼️
+
+Here are some screenshots of the application in action:
+
+![Home Page](images/home_page.png)
+![Prediction Page](images/prediction_page.png)
+
+---
+
+## How to Run the Project ▶️
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/MLPRJ.git
-   cd MLPRJ/CarValueAI
+   git clone https://github.com/Pratap0120/MLPRJ.git
    ```
-
-2. Install the required dependencies:
+2. Navigate to the project directory:
+   ```bash
+   cd MLPRJ
+   ```
+3. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-
-3. Place the following files in the project directory:
-   - `model.pkl`: Pre-trained machine learning model.
-   - `Cardetails.csv`: Dataset for reference.
-
-4. Run the application:
+4. Run the Streamlit app:
    ```bash
    streamlit run app.py
    ```
 
-5. Open the application in your web browser at:
-   ```
-   http://localhost:8501
-   ```
+---
+
+## How to Connect with Me 📬
+
+Feel free to connect with me for any questions or feedback!
+
+- **GitHub:** [Pratap0120](https://github.com/Pratap0120)
+- **Email:** pratappawar.work@gmail.com
+- **LinkedIn:** [Pratap Pawar](https://linkedin.com/in/pratap12)
 
 ---
 
-## Usage
-1. Enter the car details in the provided input fields:
-   - Select the **Car Brand**.
-   - Choose the **Year of Manufacture** using the slider.
-   - Specify **KMs Driven**, **Fuel Type**, **Transmission**, etc.
-2. Click the **Predict Price** button.
-3. View the predicted car price displayed below the form.
+## Acknowledgments 🙏
+
+This project was inspired by a YouTube tutorial. The dataset was obtained from the provided Google Drive link in the tutorial. Special thanks to all open-source contributors and educators who made this learning experience possible!
 
 ---
 
-## File Structure
-```
-CarValueAI/
-├── app.py               # Main application script
-├── model.pkl            # Pre-trained ML model (required for predictions)
-├── Cardetails.csv       # Dataset containing car details
-├── requirements.txt     # Python dependencies
-└── README.md            # Project documentation
-```
+## Disclaimer ⚠️
+This project is created solely for learning purposes and is not intended for commercial use. The dataset and implementation details are based on publicly available resources.
 
----
-
-## Technologies Used
-- **Python**: Core programming language
-- **Streamlit**: Web application framework
-- **pandas**: Data manipulation and preprocessing
-- **pickle**: Model serialization
-
----
-
-## Future Enhancements
-- **Enhanced Styling**: Improve UI/UX with advanced CSS and animations.
-- **Additional Features**: Integrate graphs and visualizations for user insights.
-- **Multi-language Support**: Expand the app's accessibility for global users.
-
----
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Contributing
-Contributions are welcome! Feel free to open issues or submit pull requests to improve the application.
-
----
-
-## Acknowledgements
-- The dataset used is from [Kaggle](https://www.kaggle.com/).
-- Special thanks to the open-source community for providing tools and resources.
