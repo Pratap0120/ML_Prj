@@ -57,8 +57,8 @@
 
 Here are some screenshots of the application in action:
 
-![Home Page](images/home_page.png)
-![Prediction Page](images/prediction_page.png)
+![Home Page](image1.png)
+![Prediction Page](image2.png)
 
 ---
 
